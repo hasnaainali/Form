@@ -1,0 +1,203 @@
+{
+  "title": "Education",
+  "fields": [
+    {
+      "name": "degreeLevel",
+      "label": "Level",
+      "type": "select",
+      "options": [
+        "Matric",
+        "Intermediate",
+        "Bachelors",
+        "Masters",
+        "Other"
+      ]
+    },
+    {
+      "name": "customLevel",
+      "label": "Custom Level",
+      "type": "text",
+      "placeholder": "e.g. PhD",
+      "showWhen": {
+        "field": "degreeLevel",
+        "value": "Other"
+      }
+    },
+    {
+      "name": "degreeNameMatric",
+      "label": "Degree / Group",
+      "type": "select",
+      "options": [
+        "Science",
+        "Arts",
+        "Medical",
+        "Commerce",
+        "Other"
+      ],
+      "showWhen": {
+        "field": "degreeLevel",
+        "value": "Matric"
+      }
+    },
+    {
+      "name": "degreeNameInter",
+      "label": "Degree / Group",
+      "type": "select",
+      "options": [
+        "Pre-Medical",
+        "Pre-Engineering",
+        "ICS",
+        "Commerce",
+        "Arts",
+        "Other"
+      ],
+      "showWhen": {
+        "field": "degreeLevel",
+        "value": "Intermediate"
+      }
+    },
+    {
+      "name": "degreeNameHigher",
+      "label": "Degree / Group",
+      "type": "select",
+      "options": [
+        "Computer Science",
+        "Software Engineering",
+        "AI",
+        "Business",
+        "Other"
+      ],
+      "showWhen": {
+        "field": "degreeLevel",
+        "value": [
+          "Bachelors",
+          "Masters",
+          "Other"
+        ]
+      }
+    },
+    {
+      "name": "customDegreeMatric",
+      "label": "Custom Group / Degree",
+      "type": "text",
+      "placeholder": "e.g. Economics",
+      "showWhen": {
+        "field": "degreeNameMatric",
+        "value": "Other"
+      }
+    },
+    {
+      "name": "customDegreeInter",
+      "label": "Custom Group / Degree",
+      "type": "text",
+      "placeholder": "e.g. Economics",
+      "showWhen": {
+        "field": "degreeNameInter",
+        "value": "Other"
+      }
+    },
+    {
+      "name": "customDegree",
+      "label": "Custom Group / Degree",
+      "type": "text",
+      "placeholder": "e.g. Data Science",
+      "showWhen": {
+        "field": "degreeNameHigher",
+        "value": "Other"
+      }
+    },
+    {
+      "name": "institute",
+      "label": "Board / University",
+      "type": "text",
+      "placeholder": "Enter board or university"
+    },
+    {
+      "name": "startDate",
+      "label": "Start Date",
+      "type": "date"
+    },
+    {
+      "name": "endDate",
+      "label": "Completion Date",
+      "type": "date"
+    },
+    {
+      "name": "obtainedMarks",
+      "label": "Obtained Marks",
+      "type": "number",
+      "placeholder": "e.g. 850",
+      "showWhen": {
+        "field": "degreeLevel",
+        "value": [
+          "Matric",
+          "Intermediate"
+        ]
+      }
+    },
+    {
+      "name": "totalMarks",
+      "label": "Total Marks",
+      "type": "number",
+      "defaultValue": 1100,
+      "showWhen": {
+        "field": "degreeLevel",
+        "value": [
+          "Matric",
+          "Intermediate"
+        ]
+      }
+    },
+    {
+      "name": "cgpa",
+      "label": "CGPA",
+      "type": "number",
+      "placeholder": "e.g. 3.5",
+      "showWhen": {
+        "field": "degreeLevel",
+        "value": [
+          "Bachelors",
+          "Masters",
+          "Other"
+        ]
+      }
+    }
+  ],
+  "columns": [
+    {
+      "key": "degreeLevel",
+      "label": "Level"
+    },
+    {
+      "key": "degreeNameMatric",
+      "label": "Degree",
+      "computed": "degree"
+    },
+    {
+      "key": "institute",
+      "label": "Board"
+    },
+    {
+      "key": "startDate",
+      "label": "Start"
+    },
+    {
+      "key": "endDate",
+      "label": "Completion"
+    },
+    {
+      "key": "obtainedMarks",
+      "label": "Obtained"
+    },
+    {
+      "key": "totalMarks",
+      "label": "Total"
+    },
+    {
+      "key": "result",
+      "label": "Result",
+      "computed": "education"
+    }
+  ],
+  "records": []
+}

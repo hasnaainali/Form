@@ -1,0 +1,39 @@
+{
+  "title": "Skills",
+  "fields": [
+    {
+      "name": "skillName",
+      "label": "Skill Name",
+      "type": "text",
+      "placeholder": "e.g. JavaScript"
+    },
+    {
+      "name": "years",
+      "label": "Years",
+      "type": "number",
+      "placeholder": "e.g. 2"
+    },
+    {
+      "name": "proficiency",
+      "label": "Proficiency",
+      "type": "range",
+      "min": 1,
+      "max": 100
+    }
+  ],
+  "columns": [
+    {
+      "key": "skillName",
+      "label": "Skill"
+    },
+    {
+      "key": "years",
+      "label": "Years"
+    },
+    {
+      "key": "proficiency",
+      "label": "Proficiency"
+    }
+  ],
+  "records": []
+}

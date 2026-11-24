@@ -1,0 +1,48 @@
+{
+  "title": "Recommendations",
+  "fields": [
+    {
+      "name": "name",
+      "label": "Name",
+      "type": "text",
+      "placeholder": "Enter recommender name"
+    },
+    {
+      "name": "relation",
+      "label": "Relation",
+      "type": "text",
+      "placeholder": "e.g. Manager"
+    },
+    {
+      "name": "contact",
+      "label": "Contact",
+      "type": "text",
+      "placeholder": "Phone or email"
+    },
+    {
+      "name": "message",
+      "label": "Message",
+      "type": "textarea",
+      "placeholder": "Write the recommendation message"
+    }
+  ],
+  "columns": [
+    {
+      "key": "name",
+      "label": "Name"
+    },
+    {
+      "key": "relation",
+      "label": "Relation"
+    },
+    {
+      "key": "contact",
+      "label": "Contact"
+    },
+    {
+      "key": "message",
+      "label": "Message"
+    }
+  ],
+  "records": []
+}

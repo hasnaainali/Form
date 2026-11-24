@@ -1,0 +1,56 @@
+{
+  "title": "Experience",
+  "fields": [
+    {
+      "name": "company",
+      "label": "Company",
+      "type": "text",
+      "placeholder": "Enter company name"
+    },
+    {
+      "name": "role",
+      "label": "Role",
+      "type": "text",
+      "placeholder": "Enter job title"
+    },
+    {
+      "name": "startDate",
+      "label": "Start Date",
+      "type": "date"
+    },
+    {
+      "name": "endDate",
+      "label": "End Date",
+      "type": "date"
+    },
+    {
+      "name": "description",
+      "label": "Description",
+      "type": "textarea",
+      "placeholder": "Describe your responsibilities"
+    }
+  ],
+  "columns": [
+    {
+      "key": "company",
+      "label": "Company"
+    },
+    {
+      "key": "role",
+      "label": "Role"
+    },
+    {
+      "key": "startDate",
+      "label": "Start"
+    },
+    {
+      "key": "endDate",
+      "label": "End"
+    },
+    {
+      "key": "description",
+      "label": "Description"
+    }
+  ],
+  "records": []
+}
